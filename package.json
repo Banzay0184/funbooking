@@ -25,7 +25,7 @@
     "eslint-plugin-vue": "^9.17.0",
     "postcss": "^8.4.38",
     "prettier": "^3.0.3",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^0.0.0-insiders.c033f10",
     "vite": "^5.1.6"
   }
 }
