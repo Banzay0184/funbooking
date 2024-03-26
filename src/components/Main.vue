@@ -1,44 +1,19 @@
 <script setup>
 import Main from './Btn.vue'
+import NewCard from './NewCard.vue'
 </script>
 
 <template>
-  <div class="overflow-hidden ">
+  <div class="overflow-hidden">
     <div class="max-w-[1160px] m-auto px-[20px]">
       <!-- news -->
       <div class="mb-[105px]">
         <h1 class="text-[40px] uppercase mb-[20px]">новости</h1>
-        <div class="flex gap-[20px]">
-          <div class="bg-white rounded-lg drop-shadow-xl p-[20px]">
-            <img class="" src="/seat1.png" alt="" />
-            <h3 class="text-[#2b64c8] font-medium mt-[12px]">
-              Как правильно спланировать авиарейс и узнать его стоимость?
-            </h3>
-            <p class="tracking-[0.02] text-[#7C7C7C] mt-[12px]">
-              Всего за несколько часов на самолете можно преодолеть расстояние в тысячи километров и
-              при этом совершенно...
-            </p>
-          </div>
-          <div class="bg-white rounded-lg drop-shadow-xl p-[20px]">
-            <img class="" src="/seat1.png" alt="" />
-            <h3 class="text-[#2b64c8] font-medium mt-[12px]">
-              Как правильно спланировать авиарейс и узнать его стоимость?
-            </h3>
-            <p class="tracking-[0.02] text-[#7C7C7C] mt-[12px]">
-              Всего за несколько часов на самолете можно преодолеть расстояние в тысячи километров и
-              при этом совершенно...
-            </p>
-          </div>
-          <div class="bg-white rounded-lg drop-shadow-xl p-[20px]">
-            <img class="" src="/seat1.png" alt="" />
-            <h3 class="text-[#2b64c8] font-medium mt-[12px]">
-              Как правильно спланировать авиарейс и узнать его стоимость?
-            </h3>
-            <p class="tracking-[0.02] text-[#7C7C7C] mt-[12px]">
-              Всего за несколько часов на самолете можно преодолеть расстояние в тысячи километров и
-              при этом совершенно...
-            </p>
-          </div>
+        <div class="flex gap-[20px] overflow-x-scroll no-scrollbar">
+          <NewCard imageUrl="/seat1.png" title="Как правильно спланировать авиарейс и узнать его стоимость?" text="Всего за несколько часов на самолете можно преодолеть расстояние в тысячи километров и при этом совершенно..."/>
+          <NewCard imageUrl="/seat2.png" title="Заказ авиабилетов по интернету - легкий способ путешествовать по миру" text="Распространенной проблемой, связанной с поездкой в другие страны становится невозможность найти ..."/>
+          <NewCard imageUrl="/seat3.png" title="Увлекательные туры в Доминикану - мечта любого путешественника" text="После однообразного отдыха в Турции, осмотра статуй фараонов в Египте и круглосуточной пляжной жизни..."/>
+          <NewCard imageUrl="/seat1.png" title="Увлекательные туры в Доминикану - мечта любого путешественника" text="После однообразного отдыха в Турции, осмотра статуй фараонов в Египте и круглосуточной пляжной жизни..."/>
         </div>
       </div>
       <!-- stock -->
