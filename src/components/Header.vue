@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import BaseModal from './BaseModal.vue'
+import ToBookCard from './ToBookCard.vue'
 import Btn from './Btn.vue'
 
 const modalActive = ref(null)
@@ -66,7 +67,7 @@ defineEmits(['close-m'])
               >
                 <Transition name="modal-inner">
                   <div v-if="minModalActive" class="">
-                    <Btn @click="toggleModal" styleBtn="btn">Войти</Btn>
+                    <Btn @click="toggleModal" styleBtn="btn-normal">Войти</Btn>
                     <Btn styleBtn="btn-line">Регистрация</Btn>
                   </div>
                 </Transition>
@@ -74,17 +75,8 @@ defineEmits(['close-m'])
             </Transition>
           </div>
         </div>
-        <div
-          class="text-[#ffff] p-[50px] flex justify-start flex-col items-center rounded-[58px] w-[100%] h-[522px;] bg-black/40 mb-[43px]"
-        >
-          <div class="flex flex-col gap-[15px]">
-            <h1 class="font-black text-center w-[600px] uppercase text-[26px]">
-              бронирование авиабилетов и отелей на срок до 14 дней.
-            </h1>
-            <h1 class="font-black text-center uppercase text-[20px]">
-              страховые полисы стран евросоюза
-            </h1>
-          </div>
+        <div class="text-[#ffff] p-[50px] flex justify-start flex-col items-center rounded-[58px] w-[100%] h-[522px;] bg-black/40 mb-[43px]">
+          <ToBookCard/>
         </div>
       </div>
       <img class="absolute top-[222px] left-[20px] h-[461px]" src="/Frame-L.png" alt="air" />

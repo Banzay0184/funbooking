@@ -9,8 +9,7 @@ defineProps({
 </template>
 
 <style scoped>
-.btn {
-  padding: 10px 0;
+.btn-normal {
   border-radius: 7px;
   padding: 6px 10px;
   width: 200px;
@@ -18,7 +17,19 @@ defineProps({
   color: white;
 }
 
-.btn:hover {
+.btn-normal:hover {
+  background: #0d46aa;
+}
+
+
+.btn-icon {
+  border-radius: 7px;
+  padding: 10px 47px;
+  background: #2b64c8;
+  color: white;
+}
+
+.btn-icon:hover {
   background: #0d46aa;
 }
 
